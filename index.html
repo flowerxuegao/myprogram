@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>原晓晓个人主页</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Dazzly Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<!-- //js -->
+<!-- menu -->
+<link href="css/component.css" rel="stylesheet" type="text/css"  />
+<!-- //menu -->
+<!-- gallery -->
+<script src="js/jquery.chocolat.js"></script>
+<link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen" charset="utf-8">
+<!--light-box-files -->
+<script type="text/javascript" charset="utf-8">
+$(function() {
+	$('.gallery a').Chocolat();
+});
+</script>
+<!-- //gallery -->
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+		$(".mypicbox").hover(function(){
+			$(".mypictwo").fadeOut("slow");
+		},function(){
+			$(".mypictwo").fadeIn("slow");
+		})
+		$("#showRightPush").hover(function(){
+			$(this).css("opacity","0.5")
+		},function(){
+			$(this).css("opacity","1")
+		})
+		var programs = document.getElementsByClassName("programs");
+		var marks = document.getElementsByClassName("mark");
+		for(var i=0;i<programs.length;i++){
+			programs[i].index = i;
+			programs[i].onmouseover = function(){
+				for(var j=0;j<marks.length;j++)
+				{
+					marks[j].style.display = "none";
+				}
+				marks[this.index].style.display = "block";
+			}
+		}
+
+
+	});
+</script>
+<!-- start-smoth-scrolling -->
+<link href='http://fonts.useso.com/css?family=Play:400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.useso.com/css?family=Sigmar+One' rel='stylesheet' type='text/css'>
+</head>
+	
+<body class="cbp-spmenu-push">
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-30027142-1', 'w3layouts.com');
+  ga('send', 'pageview');
+ 
+</script>
+<!-- banner -->
+	<div class="banner">
+		
+		<div class="container">
+			<div class="header">
+				
+				<div class="top-nav">
+					<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s2">
+						<h3>Menu</h3>
+						<ul>
+							<li class="active"><a href="index.html">Home</a></li>
+							<li><a href="#about" class="scroll">About Me</a></li>
+							<li><a href="#services" class="scroll">My Kill</a></li>
+							
+							<li><a href="#portfolio" class="scroll">My Program</a></li>
+							<li><a href="#mail" class="scroll">Contect Me</a></li>
+						</ul>
+					</nav>
+					<div class="main buttonset">	
+							<!-- Class "cbp-spmenu-open" gets applied to menu and "cbp-spmenu-push-toleft" or "cbp-spmenu-push-toright" to the body -->
+							<button id="showRightPush"><img src="images/menu.png" alt=""/></button>
+							<!--<span class="menu"></span>-->
+					</div>
+					<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+					<script src="js/classie.js"></script>
+					<script>
+					var menuRight = document.getElementById( 'cbp-spmenu-s2' ),
+					showRightPush = document.getElementById( 'showRightPush' ),
+					body = document.body;
+
+					showRightPush.onclick = function() {
+						classie.toggle( this, 'active' );
+						classie.toggle( body, 'cbp-spmenu-push-toleft' );
+						classie.toggle( menuRight, 'cbp-spmenu-open' );
+						disableOther( 'showRightPush' );
+					};
+
+					function disableOther( button ) {
+						if( button !== 'showRightPush' ) {
+							classie.toggle( showRightPush, 'disabled' );
+						}
+					}
+					</script>
+				</div>
+				<!-- <div class="clearfix"> </div> -->
+			</div>
+			
+		</div>
+		<div class = "banen rbox"></div>
+		<div class = "mypicbox">
+			<div class = "mypicone"></div>
+			<div class = "mypictwo"></div>
+		</div>
+		<h1>梦想很轻，却因此拥有飞向蓝天的力量。</h1>
+		<h4>Dream is very light, but it has the power to fly to the blue sky.</h4>
+	</div>
+<!-- //banner -->
+<!-- about -->
+	<div id="about" class="about">
+		<div class="container">
+			<h3>About <span>Me</span></h3>
+			
+			<div class="about-grid">
+				<div class="col-md-6 about-grid-left">
+					<img style = "margin-left:120px;height:400px" src="images/me2.jpg" alt=" " class="img-responsive" />
+				</div>
+				<div class="col-md-6 about-grid-right" >
+					
+					<h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;对工作充满热情，能够积极地对待生活中的每一件事，已有一定的项目开发经验，有良好的团队合作意识和良好的沟通能力，善于快速学习并使用新技术，乐于助人，有良好的适应能力，能够很快的融入新集体。</h4>
+					<p style = "color:#ccc;">Passion for work, to actively deal with everything in life, have some experience in project development, have a good sense of teamwork and good communication skills, ability to learn quickly and use the new technology, helpfulness, good adaptability, able to quickly integrate into the new collective.</p>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+<!-- //about -->
+<!-- get-in -->
+	
+<!-- My kill -->
+
+	<div id="services" class="services">
+		<div class="container">
+			<h3><span>My</span> Skill</h3>
+			<div class="row work-row">
+				<div class="service-grid">
+					<div class="col-sm-6 col-md-4 work-row-grids wow bounceIn animated" data-wow-delay=".5s" style="visibility: visible; -webkit-animation-delay: .5s;">
+						<div class = "killpic"></div>
+						<div class = "killcon">HTML5</div>
+					</div>
+					<div class="col-sm-6 col-md-4 work-row-grids wow bounceIn animated" data-wow-delay=".5s" style="visibility: visible; -webkit-animation-delay: .5s;">
+						<div class = "killpic csspic"></div>
+						<div class = "killcon">CSS3</div>
+					</div>
+					<div class="col-sm-6 col-md-4 work-row-grids wow bounceIn animated" data-wow-delay=".5s" style="visibility: visible; -webkit-animation-delay: .5s;">
+						<div class = "killpic jspic"></div>
+						<div class = "killcon">JAVASCRIPT</div>
+					</div>
+				</div>
+				<div class="service-grid">
+					<div class="col-sm-6 col-md-4 work-row-grids wow bounceIn animated" data-wow-delay=".5s" style="visibility: visible; -webkit-animation-delay: .5s;">
+						<div class = "killpic pspic"></div>
+						<div class = "killcon">PHOTOSHOP</div>
+					</div>
+					<div class="col-sm-6 col-md-4 work-row-grids wow bounceIn animated" data-wow-delay=".5s" style="visibility: visible; -webkit-animation-delay: .5s;">
+						<div class = "killpic nodepic"></div>
+						<div class = "killcon">NODEJS</div>
+					</div>
+					<div class="col-sm-6 col-md-4 work-row-grids wow bounceIn animated" data-wow-delay=".5s" style="visibility: visible; -webkit-animation-delay: .5s;">
+						<div class = "killpic jquerypic"></div>
+						<div class = "killcon">JQUERY</div>
+					</div>
+					
+				</div>
+			</div>	
+			
+			<!-- *************** -->
+		</div>
+	</div>
+<!-- //my kill -->
+
+<!-- my program -->
+	<div id="portfolio" >
+	<div class="container">
+		<h3>My Program</h3>
+		<ul class = "programcon">
+			<a href="https://flowerxuegao.github.io/my-kupao-game/game.html">
+				<li class = "programs">
+					<img src="images/run.jpg" alt="">
+					<div class = "mark">
+						<span>酷跑游戏</span>
+					</div>
+				</li>
+			</a>
+			<a href="https://flowerxuegao.github.io/bdyq/baidu.html">
+				<li class = "programs">
+					<img src="images/baidu.jpg" alt="">
+					<div class = "mark">
+						<span>百度舆情</span>
+					</div>
+				</li>
+			</a>
+			<a href="https://flowerxuegao.github.io/wangyiyouxiang/wangyi.html">
+				<li class = "programs">
+					<img src="images/mail.jpg" alt="">
+					<div class = "mark">
+						<span>网易邮箱</span>
+					</div>
+				</li>
+			</a>
+			<a href="https://flowerxuegao.github.io/drawbord/">
+				<li class = "programs">
+					<img src="images/board.jpg" alt="">
+					<div class = "mark">
+						<span>canvas画板</span>
+					</div>
+				</li>
+			</a>
+			<a href="https://flowerxuegao.github.io/roomweb/">
+				<li class = "programs">
+					<img src="images/3d.jpg" alt="">
+					<div class = "mark">
+						<span>3d 盒子</span>
+					</div>
+				</li>
+			</a>
+			<a href="https://flowerxuegao.github.io/duomi/bofang.html">
+				<li class = "programs">
+					<img src="images/music.jpg" alt="">
+					<div class = "mark">
+						<span>多米APP</span>
+					</div>
+				</li>
+			</a>
+		</ul>
+	</div>
+	<div style = "width:100%;height:100px"></div>
+	</div>
+<!-- //myprogram -->
+<!-- contact me  -->
+	<div id="mail" class="map">
+		<div class="map-color">
+		</div>
+		<div class="container">
+			<div class="map-grids">
+				<div class="col-md-12 contact-left">
+				<h3>Contact Me</h3>
+				<p>
+
+					QQ:1057796814
+					<br/><br/>
+					邮箱:flowerxuegao@sina.com
+				</p>
+				</div>
+				
+			
+			</div>
+		
+		</div>
+	</div>
+<!-- //contact me -->
+
+    <script src="js/bootstrap.js"></script>
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+<!-- //here ends scrolling icon -->
+</body>
+</html>
